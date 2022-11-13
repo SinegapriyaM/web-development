@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Location Form</title>
+    <link rel="stylesheet" href="./style2.css" />
+  </head>
+  <body>
+    <main class="container">
+      <form action="">
+        <div class="box">
+          <!-- location -->
+          <fieldset>
+            <legend>Location</legend>
+            <div class="location">
+              <label for="country">🏁</label>
+              <input
+                type="text"
+                id="country"
+                minlength="4"
+                maxlength="10"
+                required
+                oninvalid="this.setCustomValidity('Country name must be at least 4 characters long')"
+                oninput="this.setCustomValidity('')"
+              />
+            </div>
+            <div class="zip-emoji">
+              <label for="zip"> 🤐</label>
+              <input type="text" id="zip" />
+            </div>
+          </fieldset>
+          <!-- cerdentials -->
+          <fieldset class="f2">
+            <legend class="l2">Credentials</legend>
+            <div class="letter">
+              <label for="envelope">💌</label>
+              <input type="text" id="envelopes" />
+            </div>
+            <div class="keys">
+              <label for="key"> 🔑</label>
+              <input type="text" id="key" />
+            </div>
+            <div class="locks">
+              <label for="lock"> 🔒</label>
+              <input type="text" id="lock" />
+            </div>
+          </fieldset>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
